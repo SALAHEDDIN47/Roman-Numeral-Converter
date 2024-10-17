@@ -96,3 +96,7 @@
     gap:30px;
     border: 3px solid white;
   }
+
+  .hidden {
+    display: none;
+  }
