@@ -19,7 +19,7 @@
   }
 
   .title {
-    font-size: large;
+    font-size: 16px;
     color: var(--light-grey);
     margin-bottom: 20px;
   }
@@ -44,12 +44,13 @@
   
   .container {
     background-color: rgba(255, 255, 255, 0.5);
-    
     height:200px;
     width:400px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap:30px;
+    border: 3px solid white;
   }
 
   .submit {
@@ -59,8 +60,27 @@
   p {
     color: #f5f6f7;
   }
+
   label {
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--light-grey);
     text-align:center;
     font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  #convert-btn {
+    background-color: var(--yellow);
+    font-weight:bold;
+    color:#f5f6f7;
+    border-radius: 2px;
+    border: none;
+    padding: 10px;
+  }
+
+  input[type=number] {
+    background-color: var(--dark-grey);
+    color: white;
+    border: none;
+    padding:10px;
   }
