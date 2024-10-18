@@ -4,6 +4,8 @@
     --dark-grey: #0a0a23;
     --yellow: #f1be32;
     --golden-yellow: #feac32;
+    --light-red:rgb(235, 129, 129);
+    --dark-red:rgb(117, 0, 0);
   }
   
   *,
@@ -86,16 +88,21 @@
     padding:10px;
   }
 
-  .result {
-    background-color: rgba(255, 255, 255, 0.2);
-    height:50px;
-    width:400px;
+  .output {
+    background-color: var(--light-red);
+    color: var(--dark-red);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    height: 50px;
+    width: 400px;
     padding: 30px;
     display: flex;
-    flex-direction: column;
-    gap:30px;
-    border: 3px solid white;
-  }
+    justify-content: center; 
+    align-items: center;      
+    gap: 30px;
+    border: 3px solid var(--dark-red);
+}
 
   .hidden {
     display: none;
